@@ -5,8 +5,20 @@
   <title>Developer portal</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--
+    The SVG first and the .ico second, which is the order browsers read them in: anything that
+    understands image/svg+xml takes the vector and scales it, and the rest fall through to the
+    file they were going to request at /favicon.ico anyway.
+
+    Both are generated from the same source, so they cannot drift. The .ico carries 16 through
+    256 because Windows picks a size per context -- a tab, a taskbar, a desktop shortcut -- and
+    one 32px image upscaled into a shortcut is the usual way an icon ends up looking blurred.
+  -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="16x16 32x32 48x48">
 <style>:root{color-scheme:light;--ink:#172033;--muted:#617089;--surface:#ffffff;--line:#d9dfe8;--accent:#3157d5;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;color:var(--ink);background:radial-gradient(circle at top left,#e8edff,transparent 36rem),#f5f7fb}html,body{min-height:100%;margin:0}*{box-sizing:border-box}</style><link rel="stylesheet" href="styles-6GSCJWPG.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-6GSCJWPG.css"></noscript></head>
 <body>
   <app-root></app-root>
-<link rel="modulepreload" href="chunk-Da4-SChG.js"><script src="main-4RNCK2UC.js" type="module"></script></body>
+<link rel="modulepreload" href="chunk-Da4-SChG.js"><script src="main-NT2JM4ZC.js" type="module"></script></body>
 </html>
